@@ -7,16 +7,16 @@ export function HeroSection() {
   const yWatermark = useTransform(scrollYProgress, [0, 0.3], [0, 60]);
 
   return (
-    <section className="relative min-h-screen bg-[#FDF7F2] overflow-hidden">
+    <section className="relative min-h-screen bg-[#FDF7F2] overflow-hidden pt-20">
       {/* Main Content Grid */}
-      <div className="relative z-10 flex flex-col lg:flex-row min-h-screen">
+      <div className="relative z-10 flex flex-col lg:flex-row min-h-[calc(100vh-80px)]">
         {/* Left Content */}
-        <div className="flex-1 flex flex-col justify-center px-8 md:px-16 lg:px-20 pt-28 pb-16 lg:pt-0 lg:pb-0 relative z-10 max-w-[720px]">
+        <div className="flex-1 flex flex-col justify-center px-8 md:px-16 lg:px-20 pt-12 pb-16 lg:pt-0 lg:pb-0 relative z-10 max-w-[720px]">
           <motion.h1
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-            className="text-[clamp(3.2rem,7.5vw,5.8rem)] font-heading font-bold uppercase leading-[0.92] tracking-[0.02em] mb-10"
+            className="hero-title text-[clamp(3.2rem,7.5vw,5.8rem)] font-heading font-bold uppercase leading-[0.92] tracking-[0.02em] mb-10"
           >
             ELITE BEAUTY<br />SPA HAVEN
           </motion.h1>
@@ -41,6 +41,7 @@ export function HeroSection() {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             className="inline-flex items-center justify-center bg-[#1C1C1C] text-white px-10 py-4 w-fit text-[13px] font-bold uppercase tracking-[0.12em]"
+            data-cursor="book"
           >
             BOOK NOW
           </motion.a>

@@ -52,6 +52,7 @@ export function SpecialCollections() {
             variants={fadeUp}
             transition={{ duration: 0.7, delay: i * 0.1 }}
             className="group relative h-[400px] md:h-[500px] overflow-hidden cursor-pointer"
+            data-cursor="book"
           >
             {/* Background image */}
             <Image

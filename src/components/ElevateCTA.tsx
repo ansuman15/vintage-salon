@@ -32,6 +32,7 @@ export function ElevateCTA() {
           viewport={{ once: true }}
           transition={{ duration: 0.7, delay: 0.2 }}
           className="inline-flex items-center gap-3 bg-[#E5C7B1] text-[#1C1C1C] px-8 py-4 rounded-full text-[13px] font-bold uppercase tracking-[0.1em]"
+          data-cursor="book"
         >
           BOOK NOW
         </motion.a>
