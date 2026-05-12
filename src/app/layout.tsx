@@ -3,6 +3,7 @@ import { Inter, Bricolage_Grotesque } from "next/font/google";
 import "./globals.css";
 import { CustomCursor } from "@/components/CustomCursor";
 import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -125,6 +126,7 @@ export default function RootLayout({
         <CustomCursor />
         <SiteHeader />
         {children}
+        <SiteFooter />
       </body>
     </html>
   );
